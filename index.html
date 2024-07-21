@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Pagina WEB</title>
+</head>
+<body>
+    <!-- Hola mundo -->
+     <h1>Hablame Claro</h1>
+    <p>Hola Mundo, Ja weno dare mi mejor esfuerzo para ser programador web full stack</p>
+    <p>Ejejei, pero que pasa chavales? Todo bien? Todo correcto? y yo que me alegro.</p>
+
+    <!-- Imagenes -->
+    <img src="images/Cell DBFZ.jpg" alt="Cell de Dragon Ball Fighterz" width="700px" height="500">
+    <img id="cell.2" src="images/Cell DBFZ.jpg" alt="Cell de Dragon Ball Fighterz" width="700px" height="500">
+
+    <!-- Videos -->
+     <video id="auron" src="videos/AURONPLAY INTRO     SALUDO DE AURONPLAY     SOUND EFFECTS     EFECTOS DE SONID.mp4" controls width="800px"></video>
+     <video controls>
+        <source src="videos/AURONPLAY INTRO     SALUDO DE AURONPLAY     SOUND EFFECTS     EFECTOS DE SONID.mp4" type="video/mp4">
+        <source src="videos/AURONPLAY INTRO     SALUDO DE AURONPLAY     SOUND EFFECTS     EFECTOS DE SONID.mp4" type="video/avi">
+     </video>
+
+     <!-- Iframa -->
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/W8V7PTHxW9k?si=zPgnTEZ0K8CfzK_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+     <!-- Listas -->
+     <!-- Lista Organizada -->
+      <ol>
+        <li>Tener visual studio</li>
+        <li>Descargar extesiones</li>
+        <li>Empezar a codear</li>
+      </ol>
+     <!-- Lista No Organizada -->
+      <ul>
+        <li>Mouse</li>
+        <li>Teclado</li>
+        <li>Monitor</li>
+      </ul>
+
+      <!-- Tablas-->
+       <table>
+        <!-- Creamos La Cabezera-->
+        <thead>
+            <tr>
+                <th>Comida</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!-- crear de cada fila-->
+         <tr>
+            <!-- Dato dentro de la fila-->
+            <td>Arepa</td>
+            <td>2</td>
+            <td>1$</td>
+         </tr>
+         <tr>
+            <td>Tequeno</td>
+            <td>2</td>
+            <td>2$</td>
+        <tr>
+            <td>Pastelitos</td> 
+            <td>5</td>
+            <td>3$</td>
+        </tr>
+         </tr>
+       </table>
+
+       <!-- Boton -->
+        <button> Presionar </button>
+
+        <!-- Enlace - Ancla - Link - Anchore-->
+         <a href="https://www.youtube.com" target="_blank"> Ir a YouTube </a>
+
+         <a href="views/contacto.html"> Contacto </a>
+
+         <a href="#cell.2" target="_blank">
+          <button> Ir a la 2da imagen de Cell </button>
+         </a>
+
+         <a href="#auron">
+          <button> Ir al 1er video de auron </button>
+         </a>
+         <br>
+         <a href="images/Cell DBFZ.jpg" download="CellPerfecto.jpg"> Descargar Imagen</a>
+        <br>
+         <!-- Inputs (Entradas)-->
+         <!-- Input de Tipo Texto -->
+          <!-- La etiqueta Label permite colocarle un titulo al input, y la propiedad For hace referencia al
+           input a traves de su ID -->
+         <label for="nombre"> Nombre </label>
+          <input type="text" name="nombre" id="nombre" placeholder="Escribe tu Nombre">
+         <br>
+          <!-- Input de Tipo Numero -->
+           <label for="edad"> Edad </label>
+           <input type="number" name="edad" id="edad" placeholder="Ingresa tu Edad">
+          <br>
+           <!-- Input de Tipo Email -->
+            <label for="correo"> Correo </label>
+            <input type="email" name="correo" id="correo" placeholder="Ingresa Tu Correo">
+           <br>
+           <!-- Input de Tipo Password-->
+           <label for="password"> Password </label>
+           <input type="password" name="password" id="password" placeholder="Ingresa tu Password">
+           <br>
+           <!-- Input de Tipo Fecha -->
+           <label for="fnacimiento"> Fecha de Nacimiento </label>
+           <input type="date" name="fnacimiento" id="fnacimiento" max="2010-12-12" min="1990-01-01">
+           <br>
+           <!-- Input de Tipo Color -->
+            <label for="color"> Color Favorito</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <!-- Input de Tipo CheckBox -->
+             <label for="terminos">
+              <input type="checkbox" name="terminos" id="terminos">
+              Acepta los terminos y condiciones
+             </label>
+             <br>
+             <!-- Input de Tipo Radio-->
+            <label for="car">
+              <input type="radio" name="transporte" id="car" checked> Carro
+            </label>
+            <br>
+            <label for="moto">
+              <input type="radio" name="transporte" id="moto"> Moto
+            </label>
+            <br>
+            <label for="bus">
+              <input type="radio" name="transporte" id="bus"> Bus
+            </label>
+            <br>
+            <!-- Formularios -->
+             <h2> Mi Formulario</h2>
+             <form action="">
+              <!-- Nombre -->
+              <label for="nombre"> Nombre </label>
+              <input type="text" name="nombre" id="nombre" placeholder="Ingresa Tu Nombre">
+               <!-- Apellido -->
+               <label for="Apellido"> Apellido </label>
+               <input type="text" name="Apellido" id="Apellido" placeholder="Ingresa Tu Apellido">
+               <br>
+               <label for="correo"> Correo </label>
+               <input type="email" name="correo" id="correo" placeholder="Ingresa Tu Correo">
+               <!-- Selecciona Tu Pais (Input Select)-->
+                <label for="pais"> Selecciona Tu Pais </label>
+               <select name="pais" id="pais">
+                  <option value="" selected disabled> Selecciona tu Pais</option>
+                  <option value="+58" > Venezuela </option>
+                  <option value=""> Argentina </option>
+                  <option value=""> Colombia </option>
+                </select>
+               <br>
+               <!-- Input de Tipo Area -->
+                <textarea name="descripcion" id="descripcion" rows="7" cols="20">
+                  Escribe algo
+                </textarea>
+               <!-- Input de Tipo Oculto-->
+                <input type="hidden" name="rol" id="rol" value="admin">
+               <!-- Input de Tipo Boton (Para enviar el formulario -->
+                <input type="submit" value="Enviar">
+             </form>
+             <br>
+
+             <!-- Div (Division o Cajita)-->
+             <div style="background-color: aqua;">
+                <p> Hola </p>
+                <h3> Hola Nuevamente </h3>
+             </div>
+             <br>
+
+             <!-- HR Lineas Divisoras -->
+              <hr>
+              <p> Hola</p>
+              <hr>
+              <p> Hola X2</p>
+              <hr>
+              <br>
+              <!-- Span y Bold-->
+               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui laudantium saepe labore doloremque <span style="color: blueviolet;">voluptatem</span>, doloribus atque ex! <b>Fuga dolorem</b> sequi repellat id rem commodi reiciendis quis a! Vel, quibusdam beatae?</p>
+               <br>
+
+               <!-- Acordeon (details, summary)-->
+                <details>
+                  <summary> Que es Netflix? </summary>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatum molestias iusto, ullam blanditiis, neque fugit architecto eum incidunt enim amet assumenda sed eos harum possimus ratione commodi sapiente minima?</p>
+                </details>
+                <details>
+                  <summary> Histori de Netflix </summary>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatum molestias iusto, ullam blanditiis, neque fugit architecto eum incidunt enim amet assumenda sed eos harum possimus ratione commodi sapiente minima?</p>
+                </details>
+
+                <!-- HTML Semantico-->
+                <!-- Cabecera-->
+                <header></header>
+                <!-- Barra de Navegacion -->
+                <nav></nav>
+                <!-- Contenido Principal -->
+                <main></main>
+                <!-- Articulo -->
+                <article></article>
+                <!-- Direccion -->
+                <address></address>
+                <!-- Seccion -->
+                <section></section>
+                <!-- Menu Lateral / Contenido Lateral-->
+                <aside></aside>
+                <!-- Pie de Pagina-->
+                <footer></footer>
+
+
+
+</body>
+</html>
